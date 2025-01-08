@@ -20,15 +20,16 @@
     <RepositoryType>https://github.com/zorgoz/ClosedXml.TableAsEnumerable</RepositoryType>
     <PackageTags>ClosedXml; Excel; </PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <IncludeSymbols>False</IncludeSymbols>
+    <IncludeSymbols>True</IncludeSymbols>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <ContinuousIntegrationBuild>True</ContinuousIntegrationBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>bin\Debug\zorgoz.ClosedXml.TableAsEnumerable.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DocumentationFile>bin\Release\EPPlus.TableAsEnumerable.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\ClosedXml.TableAsEnumerable.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\LICENSE">

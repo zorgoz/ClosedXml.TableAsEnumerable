@@ -129,9 +129,7 @@ This project aims to fill this gap partially by providing a way to read table ob
 ## Installation
 
 * Clone it, build it, use it!
-* Or download latest release from here (https://github.com/zorgoz/EPPlus.TableAsEnumerable/releases/latest)
-* Or get it from NuGet (https://www.nuget.org/packages/zorgoz.EPPlus.TableAsEnumerable/)
-* Or to install EPPlus.TableAsEnumerable, run the following command in the Package Manager Console: `Install-Package zorgoz.EPPlus.TableAsEnumerable`
+* Or get it from NuGet (https://www.nuget.org/packages/zorgoz.ClosedXml.TableAsEnumerable/)
 
 ## Tests
 
