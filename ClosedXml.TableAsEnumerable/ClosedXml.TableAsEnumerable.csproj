@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ClosedXml.Extensions</RootNamespace>
+    <AssemblyName>zorgoz.ClosedXml.TableAsEnumerable</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>ClosedXml.TableAsEnumerable</AssemblyTitle>
+    <Description>Generic extension method enabling retrieval of Excel table rows as an enumeration of typed objects.</Description>
+    <Product>ClosedXml.TableAsEnumerable</Product>
+    <Copyright>Copyright © Zoltán Zörgő 2025</Copyright>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>TableAsEnumerable extensions for ClosedXml library</Title>
+    <Authors>zorgoz</Authors>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>https://github.com/zorgoz/ClosedXml.TableAsEnumerable</RepositoryType>
+    <PackageTags>ClosedXml; Excel; </PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <IncludeSymbols>False</IncludeSymbols>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile>bin\Debug\zorgoz.ClosedXml.TableAsEnumerable.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DocumentationFile>bin\Release\EPPlus.TableAsEnumerable.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  </ItemGroup>
+</Project>
