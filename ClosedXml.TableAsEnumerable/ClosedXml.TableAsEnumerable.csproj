@@ -10,20 +10,22 @@
     <Description>Generic extension method enabling retrieval of Excel table rows as an enumeration of typed objects.</Description>
     <Product>ClosedXml.TableAsEnumerable</Product>
     <Copyright>Copyright © Zoltán Zörgő 2025</Copyright>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>TableAsEnumerable extensions for ClosedXml library</Title>
     <Authors>zorgoz</Authors>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryType>https://github.com/zorgoz/ClosedXml.TableAsEnumerable</RepositoryType>
+    <RepositoryType>git</RepositoryType>
     <PackageTags>ClosedXml; Excel; </PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <IncludeSymbols>True</IncludeSymbols>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <ContinuousIntegrationBuild>True</ContinuousIntegrationBuild>
+    <RepositoryUrl>https://github.com/zorgoz/ClosedXml.TableAsEnumerable</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>bin\Debug\zorgoz.ClosedXml.TableAsEnumerable.xml</DocumentationFile>

@@ -125,17 +125,19 @@ public static class EPPlusAsEnumerableExtension
     {
         var mapping = PrepareMappings<T>(table);
 
-        var from = table.DataRange.FirstRow().RowNumber();
-        var to = table.DataRange.LastRow().RowNumber();
+        var range = table.Worksheet;
+        var fromRow = table.DataRange.FirstRow().RowNumber();
+        var toRow = table.DataRange.LastRow().RowNumber();
+        var fromCol = table.DataRange.FirstColumn().ColumnNumber();
 
         // Parse table
-        for (int row = from; row <= to; row++)
+        for (int row = 0; row <= toRow - fromRow; row++)
         {
             T item = (T)Activator.CreateInstance(typeof(T));
 
             foreach (var map in mapping)
             {
-                var cell = table.Cell(row - 1, map.Key);
+                var cell = range.Cell(fromRow + row, fromCol + map.Key - 1);
 
                 PropertyInfo property = map.Value.propertyInfo;
 

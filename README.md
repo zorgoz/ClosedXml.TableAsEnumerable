@@ -102,6 +102,12 @@ This generic method is doing the job, as can be seen in the example above. It re
 While `AsEnumerable<>` stops at the first error, this generic method will return an enumeration of `ExcelTableConvertExceptionArgs` containing all errors encountered during a conversion attempt. This feature is usable to provide feedback to the user.
 
 ### Version history
+
+#### v1.1
+* Fixed table positioning related issue
+* Package updates
+* Test project updates
+
 #### v1.0
 * Every simple type can be mapped including numeric ones, bool, string, DateTime and enumerations.
 * Enumerations with underlaying type other than int are supported.
